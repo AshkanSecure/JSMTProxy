@@ -1,6 +1,6 @@
-const version='1.0.0';
-const author='FreedomPrevails';
-const github='https://github.com/FreedomPrevails/JSMTProxy';
+const version='2.0.1';
+const author='Ashkan Ebrahimi';
+const github='https://github.com/AshkanSecure';
 
 const net = require('net');
 const crypto = require('crypto');
@@ -28,7 +28,7 @@ for (let i = 0; i < telegram_servers.length; i++) {
 	con_count.push(0);
 }
 
-var configObj = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+var configObj = JSON.parse(fs.readFileSync('netconfig.json', 'utf8'));
 
 function reverseInplace (buffer) {
   for (var i = 0, j = buffer.length - 1; i < j; ++i, --j) {
